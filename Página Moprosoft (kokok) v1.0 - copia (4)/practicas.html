@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Prácticas kokok</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Arapey|Philosopher|Raleway" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-flex.min.css">
+	<link rel="stylesheet" type="text/css" href="fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+    
+</head>
+<body class="body" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+	<!-- ************************************************ menu **********************************************************-->
+	<section id="menu-container">
+		<!--<div class="row">
+			<div class="col-md-12">-->
+	         	<nav class="navbar navbar-fixed-top navbar-default navbar-expand-lg" role="navigation">
+	            	<!-- Brand and toggle get grouped for better mobile display -->
+		            <div class="navbar-header">
+		            	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				            <span class="sr-only">Toggle navigation</span>
+				            <span class="icon-bar"></span>
+				            <span class="icon-bar"></span>
+				            <span class="icon-bar"></span>
+		                </button>
+		                <a class="navbar-brand" href="#">Kokok</a>
+		            </div>
+		            <!-- Collect the nav links, forms, and other content for toggling -->
+		            <div class="collapse navbar-collapse row" id="bs-example-navbar-collapse-1">
+		               	<div class="col-md-4 col-sm-12">
+			               	<ul class="nav navbar-nav">
+			                  	<li><a href="index.html">Inicio</a></li>
+			                  	<li><a href="conocenos.html">Conocenos</a></li>
+			                  	<li class="dropdown">
+			                  		<a href="#" data-toggle="dropdown">Librería <b class="caret"></b></a>
+			                  		<ul class="dropdown-menu">
+				                        <li class="active"><a href="practicas.html">Prácticas</a></li>
+				                        <li><a href="roles.html">Roles</a></li>
+				                        <li><a href="#">Canales</a></li>
+				                    </ul>
+			                  	</li>
+			               	</ul>
+		               	</div>
+		               	<div class="col-md-4 col-sm-6">
+			               	<form class="navbar-form navbar-left" role="search">
+			               		<div class="form-group">
+			                     	<input type="text" class="form-control" placeholder="introducir busqueda">
+			                  	</div>
+			                  	<button type="submit" class="btn btn-default">Buscar</button>
+			               	</form>
+		               	</div>
+		               	<div class="col-md-4 col-sm-6">		               		
+			               	<ul class="nav navbar-nav navbar-right">
+			                  	<li><a href="#">Registrate</a></li>
+			                  	<li class="dropdown">
+			                     	<a href="" data-toggle="dropdown">Acceder <b class="caret"></b></a>
+			                     	<ul class="dropdown-menu" style="padding: 15px;min-width: 250px;">
+			                        	<li>
+			                           		<div class="row">
+			                              		<div class="col-md-12">
+			                                 		<form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
+			                                    		<div class="form-group">
+			                                       			<label class="sr-only" for="exampleInputEmail2">Correo electrónico</label>
+			                                       			<input type="email" class="form-control" id="exampleInputEmail2" placeholder="Correo electrónico" required>
+			                                    		</div>
+			                                    		<div class="form-group">
+			                                       			<label class="sr-only" for="exampleInputPassword2">Contraseña</label>
+			                                       			<input type="password" class="form-control" id="exampleInputPassword2" placeholder="Contraseña" required>
+			                                    		</div>
+					                                    <div class="checkbox">
+					                                       	<label>
+					                                       		<input type="checkbox"> Recordarme
+					                                       	</label>
+					                                    </div>
+					                                    <div class="form-group">
+					                                       	<button type="submit" class="btn btn-success btn-block">Acceder</button>
+					                                    </div>
+			                                 		</form>
+			                              		</div>
+			                           		</div>
+			                        	</li>
+				                        <li class="divider"></li>
+				                        <li>
+				                            <input class="btn btn-primary btn-block" type="button" id="sign-in-google" value="Sign In with Google">
+				                            <input class="btn btn-primary btn-block" type="button" id="sign-in-twitter" value="Sign In with Twitter">
+				                        </li>
+			                     	</ul>
+			                  	</li>
+			               	</ul>
+		               	</div>
+		            </div>
+	            	<!-- /.navbar-collapse -->
+	         	</nav>
+	     	</div>
+	   	</div>
+	</section>
+	<!--************************************************* /menu *****************************************************************-->
+
+<!--******************************** Descripción o introducción a la parte de prácticas *******************************************-->
+	<section id="introduccionLibreria" class="introduccionLibreria">
+		<div class="container">
+			<div class="col-xs-12 text-xs-center introPracticas">
+				<h3>Patrón de Procesos</h3>
+				<p>El patrón de procesos es un esquema de elementos que serviran para la documentación de los procesos. Está constituido por tres partes:</p>
+			</div>
+			<div class="col-md-2 col-xs-6 offset-md-10 text-xs-center">
+				<button id="btnVer" class="btn-outline-success btnOcultar" onclick="myFunctionV()" style="display: none;">Ver procesos</button>
+			</div>
+			<div id="seccionOcultar" style="display: block;">
+				<div class="text-xs-right">
+					<button class="btn-outline-success btnOcultar" onclick="myFunctionO()">Ocultar procesos</button>
+				</div>
+				<div class="elementosPatronesProcesos row">
+					<div class="elementoPP col-md-4 col-xs-12 text-xs-center">
+						<h5>Definición general del proceso</h5>
+						<p class="descripcionPartesLibreria">En la definición general del proceso se identifica su nombre, categoría a la que pertenece, propósito, descripción general de sus actividades, objetivos, indicadorres, metas cuantitativas, reponsabilidad y autoridad, subprocesos en internos y fererencias bibliográficas. </p>
+						<button class="btn-outline-success ListadoBtn">Mostrar más detalles</button>
+					</div>
+					<div class="elementoPP col-md-4 col-xs-12 text-xs-center">
+						<h5>Prácticas</h5>
+						<p class="descripcionPartesLibreria">En las prácticas se identifican los roles involucrados en el proceso y la capacitación requerida, se describen las actividades en detalle, asociandolas a los objetivos del proceso, se presenta un diagrama de flujo de trabajo, se describen las verificaciones y validaciones requeridas, se listan los productos que se incorporan a la base de conocimiento, se  identifican los recursos de infraestructura necesarios para apoyar las actividades, se establecen as mediciones del proceso, así como las prácticas para la capacitación, manejo de situaciones excepcionales y uso de lecciones aprendidas.</p>
+						<button class="btn-outline-success ListadoBtn">Mostrar más detalles</button>
+					</div>
+					<div class="elementoPP col-md-4 col-xs-12 text-xs-center">
+						<h5>Guías de ajuste</h5>
+						<p class="descripcionPartesLibreria">En las guías de ajustes se sugieren modificaciones al proceso que no deben afectar los objetivos del mismo.</p>
+						<button class="btn-outline-success ListadoBtn">Mostrar más detalles</button>
+					</div>
+					<!--<div class="col-xs-12 text-xs-center iconoAbajo">
+						<i class="fa fa-angle-double-down" aria-hidden="true"></i>
+					</div>-->
+				</div>
+				<section id="plantillaProceso" class="plantillaProceso">
+				</section>
+			</div>
+		</div>
+	</section>
+<!--**************************************** /Descripción o introducción a la parte de prácticas ********************************-->
+
+<!--****************************************** Niveles de madurez *******************************************************-->
+	<section id="nivelesM" class="niveles">
+		<h2 class="tituloSeccionNiveles">Niveles de Madurez</h2>
+		<div id="seccionDiagrama" class="row seccionDiagrama">
+			<div id="contenidoDiagrama" class="col-md-7 col-xs-7 text-xs-center">
+				<div class="row diagramaNiveles">
+					<div id="btnRealizado" class="col-md-6 col-xs-12 text-xs-left contNivel">
+						<button class="realizado-amarillo btnNivel" data-filter="tableRealizado">Realizado</button>
+					</div>
+					<div id="btnGestionado" class="col-md-7 col-xs-12 offset-md-2 text-xs-left contNivel">
+						<button class="gestionado-azul btnNivel" data-filter="tableGestionado">Gestionado</button>
+					</div>
+					<div id="btnEstablecido" class="col-md-7 col-xs-12 offset-md-4 text-xs-left contNivel">
+						<button class="establecido-verde btnNivel" data-filter="tableEstablecido">Establecido</button>
+					</div>
+					<div id="btnPredecible" class="col-md-5 col-xs-12 offset-md-6 text-xs-left contNivel">
+						<button class="predecible-rosa btnNivel" data-filter="tablePredecible">Predecible</button>
+					</div>
+					<div id="btnOptimizado" class="col-md-3 col-xs-12 offset-md-8 text-xs-left contNivel">
+						<button class="optimizado-transparente btnNivel" data-filter="tableOptimmizado">Optimizado</button>
+					</div>
+				</div>
+			</div>
+	<!--************** Fin de los niveles e inicio de desglose de las tablas correspondiente a cada nivel ***********************-->
+			<div  class="col-md-5 col-xs-12 text-xs-center tablaPracticas">
+				<table class="table tableRealizado table-bordered table-inverse table-hover" style="display: none;">
+					<thead>
+						<tr>
+							<th class="numPractica">N°</th>
+							<th class="nombrePractica">Nombre</th>
+							<th class="fechaPractica">Fecha publicación</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row">1</th>
+							<th ><a href="#seleccionDePractica">mejora de procesos</a></th>
+							<th>25-06-2016</th>
+						</tr>
+						<tr>
+							<th scope="row">1</th>
+							<th><a href="#seleccionDePractica">procesos de calidad</a></th>
+							<th>25-06-2015</th>
+						</tr>
+						<tr>
+							<th scope="row">1</th>
+							<th><a href="#seleccionDePractica">Organización de los HR</a></th>
+							<th>25-06-2014</th>
+						</tr>
+						<tr>
+							<th scope="row">1</th>
+							<th><a href="#seleccionDePractica">mejora de procesos</a></th>
+							<th>25-06-2013</th>
+						</tr>
+						<tr>
+							<th scope="row">1</th>
+							<th><a href="#seleccionDePractica">mejora de procesos</a></th>
+							<th>25-06-2012</th>
+						</tr>
+						<tr>
+							<th scope="row">1</th>
+							<th><a href="#seleccionDePractica">mejora de procesos</a></th>
+							<th>25-06-2011</th>
+						</tr>
+					</tbody>
+				</table>
+				<table class="table tableGestionado table-bordered table-inverse table-hover" style="display: none;">
+					<thead>
+						<tr>
+							<th class="numPractica">N°</th>
+							<th class="nombrePractica">Nombre</th>
+							<th class="fechaPractica">Fecha publicación</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row">1</th>
+							<th ><a href="#seleccionDePractica">mejora de procesos</a></th>
+							<th>25-06-2016</th>
+						</tr>
+						<tr>
+							<th scope="row">1</th>
+							<th><a href="#seleccionDePractica">mejora de procesos</a></th>
+							<th>25-06-2015</th>
+						</tr>
+						<tr>
+							<th scope="row">1</th>
+							<th><a href="#seleccionDePractica">mejora de procesos</a></th>
+							<th>25-06-2014</th>
+						</tr>
+						<tr>
+							<th scope="row">1</th>
+							<th><a href="#seleccionDePractica">mejora de procesos</a></th>
+							<th>25-06-2013</th>
+						</tr>
+						<tr>
+							<th scope="row">1</th>
+							<th><a href="#seleccionDePractica">mejora de procesos</a></th>
+							<th>25-06-2012</th>
+						</tr>
+						<tr>
+							<th scope="row">1</th>
+							<th><a href="#seleccionDePractica">mejora de procesos</a></th>
+							<th>25-06-2011</th>
+						</tr>
+					</tbody>
+				</table>
+				<table class="table tableEstablecido table-bordered table-inverse table-hover" style="display: none;">
+					<thead>
+						<tr>
+							<th class="numPractica">N°</th>
+							<th class="nombrePractica">Nombre</th>
+							<th class="fechaPractica">Fecha publicación</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row">1</th>
+							<th ><a href="#seleccionDePractica">mejora de procesos</a></th>
+							<th>25-06-2016</th>
+						</tr>
+						<tr>
+							<th scope="row">1</th>
+							<th><a href="#seleccionDePractica">mejora de procesos</a></th>
+							<th>25-06-2015</th>
+						</tr>
+						<tr>
+							<th scope="row">1</th>
+							<th><a href="#seleccionDePractica">mejora de procesos</a></th>
+							<th>25-06-2014</th>
+						</tr>
+						<tr>
+							<th scope="row">1</th>
+							<th><a href="#seleccionDePractica">mejora de procesos</a></th>
+							<th>25-06-2013</th>
+						</tr>
+						<tr>
+							<th scope="row">1</th>
+							<th><a href="#seleccionDePractica">mejora de procesos</a></th>
+							<th>25-06-2012</th>
+						</tr>
+						<tr>
+							<th scope="row">1</th>
+							<th><a href="#seleccionDePractica">mejora de procesos</a></th>
+							<th>25-06-2011</th>
+						</tr>
+					</tbody>
+				</table>
+				<table class="table tablePredecible table-bordered table-inverse table-hover" style="display: none;">
+					<thead>
+						<tr>
+							<th class="numPractica">N°</th>
+							<th class="nombrePractica">Nombre</th>
+							<th class="fechaPractica">Fecha publicación</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row">1</th>
+							<th ><a href="#seleccionDePractica">mejora de procesos</a></th>
+							<th>25-06-2016</th>
+						</tr>
+						<tr>
+							<th scope="row">1</th>
+							<th><a href="#seleccionDePractica">mejora de procesos</a></th>
+							<th>25-06-2015</th>
+						</tr>
+						<tr>
+							<th scope="row">1</th>
+							<th><a href="#seleccionDePractica">mejora de procesos</a></th>
+							<th>25-06-2014</th>
+						</tr>
+						<tr>
+							<th scope="row">1</th>
+							<th><a href="#seleccionDePractica">mejora de procesos</a></th>
+							<th>25-06-2013</th>
+						</tr>
+						<tr>
+							<th scope="row">1</th>
+							<th><a href="#seleccionDePractica">mejora de procesos</a></th>
+							<th>25-06-2012</th>
+						</tr>
+						<tr>
+							<th scope="row">1</th>
+							<th><a href="#seleccionDePractica">mejora de procesos</a></th>
+							<th>25-06-2011</th>
+						</tr>
+					</tbody>
+				</table>
+				<table class="table tableOptimmizado table-bordered table-inverse table-hover" style="display: none;">
+					<thead>
+						<tr>
+							<th class="numPractica">N°</th>
+							<th class="nombrePractica">Nombre</th>
+							<th class="fechaPractica">Fecha publicación</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row">1</th>
+							<th ><a href="#seleccionDePractica">mejora de procesos</a></th>
+							<th>25-06-2016</th>
+						</tr>
+						<tr>
+							<th scope="row">1</th>
+							<th><a href="#seleccionDePractica">mejora de procesos</a></th>
+							<th>25-06-2015</th>
+						</tr>
+						<tr>
+							<th scope="row">1</th>
+							<th><a href="#seleccionDePractica">mejora de procesos</a></th>
+							<th>25-06-2014</th>
+						</tr>
+							<tr>
+							<th scope="row">1</th>
+							<th><a href="#seleccionDePractica">mejora de procesos</a></th>
+							<th>25-06-2013</th>
+						</tr>
+						<tr>
+							<th scope="row">1</th>
+							<th><a href="#seleccionDePractica">mejora de procesos</a></th>
+							<th>25-06-2012</th>
+						</tr>
+						<tr>
+							<th scope="row">1</th>
+							<th><a href="#seleccionDePractica">mejora de procesos</a></th>
+							<th>25-06-2011</th>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>	
+	</section>
+<!--/Niveles de madurez -->
+
+<!--seccion de seleccion de prácticas de acuerdo al nivel de madurez-->
+	<section id="seleccionDePractica" class="seleccionDePractica">
+		<div class="container-fluid estiloinfo dropdown">
+    		<h3 class="titulo-practica-nivel"> Nivel de madurez "Realizado"</h3>
+    		<div class="row">
+        		<div class="col-xs-12 margin-bottom-30" id="CategoríasP1">
+                <!-- BEGIN Portlet PORTLET-->
+                	<div class="portlet">
+                    	<div class="portlet-title">
+                        	<div class="caption caption-red">
+                            	<span class="caption-subject uppercase"> Práctica 1 </span>
+                        	</div>
+                        	<ul class="nav nav-tabs">
+	                            <li class="active">
+	                                <a class="titulo-pestaña" href="#portlet_tab1" data-toggle="tab">Alcances  y objetivos</a>
+	                            </li>
+	                            <li>
+	                                <a class="titulo-pestaña" href="#portlet_tab2" data-toggle="tab">Condiciones y productos de entrada</a>
+	                            </li>
+	                            <li>
+	                                <a class="titulo-pestaña" href="#portlet_tab3" data-toggle="tab">Condiciones y productos de salida</a>
+	                            </li>
+	                            <li>
+	                                <a class="titulo-pestaña" href="#portlet_tab4" data-toggle="tab">Requerimientos y necesidades</a>
+	                            </li>
+	                            <li>
+	                                <a class="titulo-pestaña" href="#portlet_tab5" data-toggle="tab">Prácticas relacionadas</a>
+	                            </li>
+	                            <li>
+	                                <a class="titulo-pestaña" href="#portlet_tab6" data-toggle="tab">Detalles de autoria</a>
+	                            </li>
+                        	</ul>
+                    	</div>
+                    	<div class="portlet-body">
+                        	<div class="tab-content">
+                            	<div class="tab-pane active" id="portlet_tab1">
+                                	<h5>El objetivo de...</h5>
+                                	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac quam iaculis, rhoncus risus ac, tristique elit. In congue tempus pulvinar. Donec ac nisl magna. Proin laoreet pharetra massa, ac bibendum quam faucibus vel.</p>
+                            	</div>
+	                            <div class="tab-pane" id="portlet_tab2">
+	                                <h5>Las condiciones de entrada son...</h5>
+	                                <p>Pellentesque a dapibus quam, sit amet tristique leo. Nunc mollis pretium aliquam. Etiam scelerisque nec magna at auctor.</p>
+	                            </div>
+	                            <div class="tab-pane" id="portlet_tab3">
+	                                <h5>Los productos de entrada necesarios...</h5>
+	                                <p>Duis quam dolor, vulputate a ipsum id, tincidunt pellentesque felis. Maecenas consectetur nunc vel porttitor dignissim. Donec egestas eros eget eros mattis, at luctus metus sagittis. Phasellus ac scelerisque ligula.</p>
+	                            </div>
+	                            <div class="tab-pane" id="portlet_tab4">
+	                                <h5>Las herramientas necesarias para...</h5>
+	                                <p>Nam sodales dui nulla, nec vestibulum lorem maximus id. Nam quis dictum arcu, sit amet feugiat mauris. Nullam enim lorem, volutpat in suscipit vitae, facilisis vitae ante.</p>
+	                            </div>
+	                            <div class="tab-pane" id="portlet_tab5">
+	                                <h5>Las habilidades requeridas son...</h5>
+	                                <p>Nullam enim lorem, volutpat in suscipit vitae, facilisis vitae ante.</p>
+	                            </div>
+	                            <div class="tab-pane" id="portlet_tab6">
+	                                <h5>Se sugiere ver las siguientes práccticas relacionadas...</h5>
+	                                <p>Aliquam quis tincidunt risus, eget lobortis diam. Aenean sodales facilisis laoreet. Sed hendrerit lobortis metus, vitae venenatis urna efficitur sit amet.</p>
+	                            </div>
+                        	</div>
+                    	</div>
+                	</div>
+                <!-- END Portlet PORTLET-->
+        		</div>
+       		</div>
+       	</div>
+	</section>
+<!--/seccion de seleccion de prácticas de acuerdo al nivel de madurez-->
+
+
+<!-- footer -->
+	<div class="search-text"> 
+        <div class="footerContainer">
+	        <div class="row text-center">
+	         	<div class="form">
+	           		<h4>Registrate</h4>
+	                <form id="search-form" class="form-search form-horizontal">
+	                    <input type="text" class="input-search" placeholder="Email@example.com">
+	                    <button type="submit" class="btn-search">Enviar</button>
+	                </form>
+	            </div>
+	        </div>         
+        </div>     
+	</div>
+	
+    <footer>
+	    <div class="footerContainer">
+	       <div class="row">
+	            <div class="col-xl-3 col-xs-12">
+	            	<figure class="footerLogo" >
+	            		<img src="img/fuego.gif" alt="logo KOKOK"/>
+	            	</figure>
+	            </div>
+	                
+	            <div class="col-xl-3 col-md-5 col-sm-6 col-xs-12">
+	                <ul class="footerMenu">
+	                    <span>Menú</span>    
+	                    <li>
+	                        <a href="#">Inicio</a>
+	                    </li>
+	                    <li>
+	                    	<a href="#">Conócenos</a>
+	                    </li>
+	                    <li>
+	                    	<a href="#">Prácticas</a>
+	                    </li>
+	                    <li>
+	                    	<a href="#">Roles</a>
+	                   	</li>
+	                </ul>
+	            </div>
+	           
+	            <div class="col-xl-6 col-md-5 col-sm-6 col-xs-12  footerFormulario">
+	            	<span>Contactanos</span>       
+	                <form class="formulario">
+	                	<div class="row">
+	                		<div class="col-md-6">
+	                			<label for="nombre">Nombre</label><br>
+								<input type="text" required id="nombre" name="nombre" /> <br>
+								<label for="email">E-mail</label><br>
+								<input type="email" required id="email" name="email" />
+								<div class="footerNotificaciones">
+									<label for="si">
+										<input type="radio" name="notificaciones" id="si" value="recibirNotificaciones"/> Deseo recibir noticias
+									</label>
+									<label for="no">
+										<input type="radio" name="notificaciones" id="no" value="noRecibirNotificaciones"/> No deseo recibir noticias
+									</label>
+								</div>
+	                		</div>
+	                		<div class="col-md-6">
+									<label for="comentarios">Comentarios</label><br>
+									<textarea id="comentarios" rows="7" cols="30" name="comentarios"></textarea><br>
+									<input type="submit" value="Enviar" name="" class="boton">
+							</div>
+	                	</div>		
+					</form>
+	            </div>
+	        </div> 
+	    </div>
+    </footer>
+
+
+<!-- /footer -->
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+<script src="js/app.js"></script>
+<script type="text/javascript" async src="https://ssl.google-analytics.com/ga.is"></script>
+<script src="js/script.js"></script>
+<script src="js/jquery-3.2.1.min.js"></script>
+
+</body>
+</html>

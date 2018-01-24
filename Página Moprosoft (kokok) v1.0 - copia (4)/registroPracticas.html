@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+	Registro de nuevas prácticas kokok</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Arapey" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-flex.min.css">
+	<link rel="stylesheet" type="text/css" href="fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+</head>
+<body class="body" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+	<div id="menu-container">
+		<nav id="navMenu" class="navbar-fixed-top navbar navbar-expand-lg navbar-light bg-light">
+			<div class="row collapse navbar-collapse" id="navbarNavDropdown">
+				<div class="col-xs-6">
+					<figure class="logo">
+						<img src="">
+					</figure>
+				<ul class="navbar-nav ">
+					<li class="nav-item active text-xs-center">
+			        	<a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+			      	</li>
+			        <li class="nav-item text-xs-center">
+			        	<a class="nav-link" href="conocenos.html">Conocenos</a>
+			      	</li>
+			      	<li class="nav-item dropdown text-xs-center">
+			        	<a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Librería </a>
+			        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+			        	<a class="dropdown-item" href="practicas.html">Prácticas</a>
+			          	<a class="dropdown-item" href="roles.html">Roles</a>
+			          	<a class="dropdown-item" href="#">Canales</a>
+			        </div>
+			      	</li>
+			      	<li class="nav-item text-xs-center">
+			        	<a class="nav-link" href="#">Registrate</a>
+			     	</li>
+			     	<li class="nav-item text-xs-center">
+			     		<a class="login hidden-sm-up text-uppercase font-weight-bold pull-sm-right" href="#">Login</a>
+			     	</li>
+			    </ul>
+			    </div>
+			    <div class="col-xs-3">
+			    <form class="form-inline my-2 my-lg-0 hidden-xs-down">
+			    	<input class="form-control mr-sm-2" type="text" placeholder="Buscar" aria-label="Search">
+			      	<button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+			      		<span class="hidden-sm-down">Buscar</span>
+						<i class="fa fa-search hidden-md-up"></i>
+			      	</button>
+
+			    </form>
+			    </div>
+			    <div class="col-xs-3">
+				    <ul class="nav navbar-nav navbar-right">
+				    	<li class="dropdown">
+				            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Acceder</b> </a>
+				            <ul id="login-dp" class="dropdown-menu">
+				            	<li class="formularioLogin">
+				            		<div class="">
+				            			<div class=""> Acceder via
+				            				<div class="social-buttons">
+				            					<a href="#" class="btn btn-fb"><i class="fa fa-facebook">
+				            					</i> Facebook</a>
+				            					<a href="#" class="btn btn-tw"><i class="fa fa-twitter">
+				            					</i> Twitter</a>
+				            				</div>
+				            				<form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
+				            					<div class="form-group">
+				            						<label class="sr-only" for="exampleInputEmail2">correo electrónico</label>
+				            						<input type="email" class="form-control" id="exampleInputEmail2" placeholder="correo electrónico" required>
+				            					</div>
+				            					<div class="form-group">
+				            						<label class="sr-only" for="exampleInputPassword2">Contraseña</label>
+				            						<input type="password" class="form-control" id="exampleInputPassword2" placeholder="Contraseña" required>
+				            						<div class="help-block text-right"><a href="">Forget the password ?</a>
+				            						</div>
+				            					</div>
+				            					<div class="form-group">
+				            						<button type="submit" class="btn btn-primary btn-block">Sign in</button>
+				            					</div>
+				            					<div class="checkbox">
+				            						<label>
+				            							<input type="checkbox"> keep me logged-in
+				            						</label>
+				            					</div>
+				            				</form>
+				            			</div>
+				            			<div class="bottom text-center">New here ? 
+				            				<a href="#"><b>Join Us</b></a>
+				            			</div>
+				            		</div>
+				            	</li>
+				            </ul>
+				        </li>
+				    </ul>
+				</div>
+			</div>
+		</nav>
+			<div id="search-bar" class="container hidden-sm-up">
+				<div class="row">
+					<div class="col-xs">
+						<form >
+							<div class="input-group">
+					    	<input class="form-control mr-sm-2" type="text" placeholder="Buscar" aria-label="Search">
+					      	<button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+					      		<span class="hidden-sm-down">Buscar</span>
+								<i class="fa fa-search hidden-md-up"></i>
+					      	</button>
+					      </div>
+					    </form>
+					</div>
+				</div>
+			</div>
+	</div>
+
+
+	<div class="formulario2">
+		<div ng-app="formu-2">
+			<div ng-controller="ControladorFiltros as filtro">
+				<div class="container-fluid">
+					<div class="col-md-6 panel-body">
+						<h1><small>Tabla</small></h1>
+						<label class="title">Buscar: <input class="form-control" ng-model="searchText"></label>
+						<table class="table table-striped">
+							<caption>Empleados</caption>
+							<thead>
+								<td>
+									<th>Nombre</th>
+						            <th>apellido</th>
+						            <th>Telefono</th>
+						            <th>Cargo</th>
+					          	</td>
+					        </thead>
+					        <tbody ng-repeat="registro in filtro.registros | filter:searchText">
+					        	<td>
+					        		<th>{{registro.nombre}}</th>
+						            <th>{{registro.apellido}}</th>
+						            <th>{{registro.telefono}}</th>
+						            <th>{{registro.cargo}}</th>
+						        </td>
+					        </tbody>
+					    </table>
+    				</div>
+    				<div class="col-md-6">
+    					<div class="panel-body">
+    						<h1><small>Formulario</small></h1>
+    						<form name="formularioReg" class="form-horizontal" ng-submit="formularioReg.$valid && filtro.addRegistro(filtro.registro)" novalidate>
+    							<fieldset class="form-group">
+    								<input type="text" name="nombre" ng-model="filtro.registro.nombre" class="form-control" placeholder="Escriba su nombre" title="Nombre:" required> </input>
+    							</fieldset>
+    							<fieldset class="form-group">
+    								<input type="text" ng-model="filtro.registro.apellido" class="form-control" placeholder="Escriba su apellido" title="Apellido:" required></input>
+    							</fieldset>
+    							<fieldset class="form-group">
+    								<input type="number" name="tel" ng-model="filtro.registro.telefono" class="form-control" placeholder="Escriba su telefono" title="Telefono" required></input>
+    							</fieldset>
+    							<fieldset class="form-group">
+    								<input type="text" ng-model="filtro.registro.cargo" class="form-control" title="Cargo" placeholder="Escriba su Cargo" required></input>
+    							</fieldset>
+    							<input type="submit" class="btn-success"  value="enviar formulario {{formularioReg.$valid}}"></input>
+    							<blockquote >
+								    {{"Nombre: "+filtro.registro.nombre}} <br>
+								    {{"Apellido: "+filtro.registro.apellido}}<br>
+								    {{"Telefono: "+filtro.registro.telefono}}<br>
+								    {{"Cargo: "+filtro.registro.cargo}}
+								</blockquote>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+<script src="js/app.js"></script>
+<script type="text/javascript" async src="https://ssl.google-analytics.com/ga.is"></script>
+<script src="js/script.js"></script>
+<script src="js/jquery-3.2.1.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</body>
+</html>
